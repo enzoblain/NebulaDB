@@ -1,27 +1,20 @@
-# Rust code formatting configuration
-# See: https://rust-lang.github.io/rustfmt/
+# rustfmt.toml (compatible stable)
 
 max_width = 100
-hard_tabs = false
-tab_spaces = 4
-newline_style = "Unix"
-use_small_heuristics = "Default"
 reorder_imports = true
+
+trailing_comma = "Vertical"
+
+format_strings = true
+format_macro_bodies = true
+
 reorder_modules = true
-remove_nested_parens = true
-edition = "2024"
+reorder_impl_items = true
 
-# Function formatting
-fn_args_layout = "Tall"
-brace_style = "SameLineWhere"
-control_brace_style = "AlwaysSameLine"
+where_single_line = false
 
-# Import formatting
-imports_granularity = "Crate"
-group_imports = "StdExternalCrate"
+blank_lines_upper_bound = 2
 
-# Comments and documentation
-format_code_in_doc_comments = true
-normalize_comments = true
-wrap_comments = true
-comment_width = 80
+unstable_features = false
+
+fn_params_layout = "Tall"
