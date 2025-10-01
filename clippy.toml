@@ -1,0 +1,28 @@
+# Clippy configuration for NebulaDB
+# See: https://doc.rust-lang.org/clippy/configuration.html
+
+# Set the maximum allowed cyclomatic complexity
+cognitive-complexity-threshold = 30
+
+# Enforce certain lint levels
+# Use cargo clippy -- -D warnings to treat warnings as errors
+
+# Allow certain lints that might be too noisy during development
+# Remove these as the codebase matures
+allow = [
+    "clippy::module_inception",
+    "clippy::new_without_default",
+]
+
+# Warn on certain lints
+warn = [
+    "clippy::todo",
+    "clippy::unimplemented",
+    "clippy::unwrap_used",
+    "clippy::expect_used",
+]
+
+# Set limits
+too-many-arguments-threshold = 8
+type-complexity-threshold = 250
+single-char-lifetime-names-threshold = 4

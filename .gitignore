@@ -1,0 +1,23 @@
+# Cargo
+/target/
+Cargo.lock
+
+# Rust backup files
+**/*.rs.bk
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# IDEs (basics)
+.vscode/
+.idea/
+
+# Env/secrets
+.env
+*.key
+*.pem
